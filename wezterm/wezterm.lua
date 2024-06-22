@@ -13,8 +13,9 @@ if wezterm.config_builder then config = wezterm.config_builder() end
 -- For example, changing the color scheme:
 config.color_scheme = 'Tokyo Night'
 config.font = wezterm.font_with_fallback({
-    { family = "Iosevka Nerd Font",       scale = 1.2, weight = "Medium", },
-    { family = "FantasqueSansM Nerd Font", scale = 1.3, },
+    { family = "Terminess Nerd Font",       scale = 1.5, weight = "Medium", },
+    { family = "SauceCodePro Nerd Font",       scale = 1.5, weight = "Medium", },
+    -- { family = "FantasqueSansM Nerd Font", scale = 1.5, },
 })
 config.window_background_opacity = 0.9
 config.window_decorations = "RESIZE"
