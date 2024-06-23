@@ -13,6 +13,7 @@ if wezterm.config_builder then config = wezterm.config_builder() end
 -- For example, changing the color scheme:
 config.color_scheme = 'Tokyo Night'
 config.font = wezterm.font_with_fallback({
+    { family = "FiraCode Nerd Font",       scale = 1.5, weight = "Medium", },
     { family = "Terminess Nerd Font",       scale = 1.5, weight = "Medium", },
     { family = "SauceCodePro Nerd Font",       scale = 1.5, weight = "Medium", },
     -- { family = "FantasqueSansM Nerd Font", scale = 1.5, },
