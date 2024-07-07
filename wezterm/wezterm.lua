@@ -19,7 +19,7 @@ config.font = wezterm.font_with_fallback({
 config.window_background_opacity = 0.9
 config.window_decorations = "RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
-config.scrollback_lines = 3000
+config.scrollback_lines = 6000
 config.default_workspace = "main"
 
 -- Dim inactive panes
@@ -154,7 +154,7 @@ wezterm.on("update-status", function(window, pane)
   cmd = cmd and basename(cmd) or ""
 
   -- Time
-  local time = wezterm.strftime("%H:%M")
+  local time = wezterm.strftime("%H:%M:%S")
 
   -- Left status (left of the tab line)
   window:set_left_status(wezterm.format({
